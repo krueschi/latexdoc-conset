@@ -1,0 +1,8 @@
+# System files
+.DS_Store
+
+# LaTeX temp and compile files
+*.aux
+*.log
+
+

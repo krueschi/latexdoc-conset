@@ -1,0 +1,20 @@
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage[protrusion=true,final]{microtype}
+
+% converts LaTeX specials (quotes, dashes etc.) to Unicode
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[Ligatures={Common}, Numbers={OldStyle}]{Raleway}
+\setsansfont[Scale=0.9]{Ubuntu}
+\setmonofont[Scale=0.8]{Menlo}
+
+% Set paragraph break
+\setlength{\parskip}{1em}
+
+% Custom ampersand
+\newcommand{\amper}{{\fontspec[Scale=.95]{ \mainfont\ }\selectfont\itshape\&}}
+
+% Trim excessive whitespace before lists
+\usepackage{enumitem}
+\setlist{nolistsep}

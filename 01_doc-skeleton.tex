@@ -4,21 +4,30 @@
 
 % Language settings
 %----------------------------
+\usepackage{ngerman}
+% $if(language)$ % Setup in YAML settings file.
+%   \usepackage{polyglossia}
+%   \setmainlanguage{$language$}
+% $endif$
+
 
 % Layout settings
 %----------------------------
-\usepackage{geometry}
-% \geometry{$geometry$} % Uncomment when using YAML settings file
-\geometry{25mm}
 \usepackage[margin=25mm]{geometry}
 % \geometry{$geometry$} % Comment when not using YAML settings file
+
+\input{header-footer}
+
 
 % Typography settings
 %----------------------------
 \input{typography} % Uncomment for additional fonts and typography.
+
+
 % PDF settings
 %----------------------------
 \usepackage[xetex, bookmarks, colorlinks, breaklinks]{hyperref}
+
 % Dummy content creation
 %----------------------------
 \usepackage{lipsum}
@@ -31,9 +40,8 @@
 
 % Insert Table of contents here.
 % copy and paste toc.tex or
-% \input{toc} % Uncomment for including the tex file.
+\input{toc} % Uncomment for including the tex file.
 
-\lipsum[5] % This is example content - comment out!
+$body$
   
-\end{document}
 \end{document}

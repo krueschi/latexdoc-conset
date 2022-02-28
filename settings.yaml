@@ -1,0 +1,7 @@
+# YAML Settings
+mainfont: Open Sans # Used for normal text.
+altfont: Merriweather # Used for headings, titles etc.
+monofont: Menlo
+language: de
+fontsize: 10pt # For fonts other than Open Sans try 11pt or 12pt.
+geometry: a4paper, left=25mm, top=25mm, right=25mm, bottom=25mm

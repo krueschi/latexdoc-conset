@@ -1,5 +1,6 @@
 ---
 title: 'Titel des Testdokuments'
+
 ...
 
 erstellt mit: 
@@ -16,7 +17,11 @@ pandoc -o test1.pdf --template=01_doc-skeleton.tex --pdf-engine=xelatex -- untit
 \lipsum[2-5] 
 }
 
-## Was es noch gibt
+## \textcolor{Blue}{Was es noch gibt}
+
+\textcolor{Maroon}{
+\lipsum[1]
+}
 
 \lipsum[5-8]
 

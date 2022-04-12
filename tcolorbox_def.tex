@@ -1,0 +1,14 @@
+\usepackage{xcolor}
+\usepackage{tkiz,pgf,verbatim,environ,etoolbox} % TColorBox dependencies.
+\usepackage[most]{tcolorbox}
+
+\newtcbtheorem{theo}%
+  {Theorem}{}{theorem}
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!50!black,title=TColorBox Heading]
+Dieser Beispieltext ist innerhalb der \'tcolorbox\' zu sehen.
+\end{tcolorbox}
+
+\begin{theo}{Das ist ein vordefiniertes Theorem}{refanker}
+  Theoreme können nun auch gezählt und referenziert werden...
+\end{theo}

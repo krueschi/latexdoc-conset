@@ -1,0 +1,50 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[a4paper,12pt,parskip=oneandhalf]{scrartcl}
+
+% =========================
+% =     Customization     =
+% =========================
+\usepackage{ngerman}
+\usepackage{geometry}
+\geometry{a4paper}
+\usepackage{multirow}
+\usepackage{tabulars}
+
+
+\begin{document}
+
+\begin{titlepage}
+  \thispagestyle{empty}
+  \title
+  \author
+  \date
+\end{titlepage}
+
+
+
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+% =========================
+% =    !!! Dokument !!!   =
+% =========================
+
+\include{theFile}
+
+
+
+% =========================
+% =       Appendix        =
+% =========================
+\newpage
+\appendix
+\addappendixtotoc
+
+\bibliographystyle{jurabib}
+\bibliography{../bib/bibliography}
+
+\listoffigures
+
+\end{document}

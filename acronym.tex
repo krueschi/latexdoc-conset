@@ -1,0 +1,13 @@
+% Acronyms and Glossary
+%----------------------
+\usepackage[acronym]{glossaries-extra}
+\setabbreviationstyle[acronym]{long-short}
+% \newacronym{internal_reference}{short_form}{long_form}
+% example:
+% \newacronym{bmtv}{BMTV}{Bundesmanteltarifvertrag Süßware}
+\makeglossaries
+
+Zur Nutzung der Abkürzung für den \gls{bmtv} wird dann ab der zweiten Verwendung nur noch die Abkürzung \gls{bmtv} angezeigt.
+
+% It is not a must-have:
+\printglossary[type=\acronymtype]

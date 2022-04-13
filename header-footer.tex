@@ -1,9 +1,10 @@
 % Header and footer stuff
 \usepackage{fancyhdr}
+\usepackage{lastpage}
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyfoot[R]{Seite \thepage\ }
+\fancyfoot[R]{Seite \thepage\ / \pageref{LastPage}}
 \renewcommand{\headrulewidth}{1pt}
 \renewcommand{\footrulewidth}{1pt}
 % End header and footer stuff

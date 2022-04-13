@@ -27,4 +27,15 @@ pandoc -o test1.pdf --template=01_doc-skeleton.tex --pdf-engine=xelatex -- untit
 
 # Zweiter Abschnitt
 
-\lipsum[1-6]
+\blindenumerate[6]
+
+Hier wird nur ein Bruch dargestellt: $\frac{1}{32}$ ist nur ein Zweiunddreißigstel.
+
+\blinditemize[4]
+
+\blindlistlist{itemize}
+
+# Dritter Abschnitt
+
+\Blindtext[6][1]
+

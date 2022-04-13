@@ -21,8 +21,9 @@ All additional LaTeX packages you need are listed here. Install them with ```tlm
 
 **Dummy content creation**
 : When using this as an working example we need some dummy content.
-  This can be created with the ```lipsum``` package.
+  This can be created with the ```lipsum``` or ```blindtext``` package.
   - lipsum
+  - blindtext
 
 **Header & Footer**
 : For using ```header-footer.tex``` you need

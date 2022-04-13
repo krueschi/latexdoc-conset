@@ -1,8 +1,11 @@
-# System files
+# System and temp files
 .DS_Store
+*.lb
 
-# LaTeX temp and compile files
+# LaTeX compile files
 *.aux
 *.log
-
+*.lof
+*.synctex.gz
+*.toc
 

@@ -1,0 +1,92 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+% ============================================================================
+% Command for rendering:
+% pandoc -o output.pdf --template=bericht.tex --pdf-engine=xelatex -- input.md
+% ============================================================================
+
+\documentclass[12pt,a4paper]{scrartcl}
+
+% Language settings
+%----------------------------
+\usepackage[ngerman]{babel}
+% $if(language)$ % Setup in YAML settings file.
+%   \usepackage{polyglossia}
+%   \setmainlanguage{$language$}
+% $endif$
+
+
+% Layout settings
+%----------------------------
+\usepackage[margin=25mm]{geometry}
+% \geometry{$geometry$} % Comment when not using YAML settings file
+
+\input{header-footer}
+
+
+% Typography settings
+%----------------------------
+\input{typography} % Uncomment for additional fonts and typography.
+
+% Color settings
+%----------------------------
+% \input{colors} % Uncomment for color definitions.
+
+% Graphics usage
+%----------------------------
+% \input{graphics} % Uncomment to use graphics
+
+% Acronyms and Glossary
+%----------------------------
+% \input{acronym} % Uncomment to use acronyms and glossary functions.
+
+% PDF settings
+%----------------------------
+\usepackage[xetex, bookmarks, colorlinks, breaklinks]{hyperref}
+\hypersetup{
+  pdfinfo={
+    Author={Christian Böttger},
+    Title={Bestandsaufnahme DAV-Hamburg},
+    CreationDate={D:20180608175622},
+    ModDate={D:20211117000000},
+    Keywords={PDF;LaTeX;DAV-Hamburg;Bestandsaufnahme},
+  }
+}
+
+\begin{document}
+
+
+% Insert titlepage settings here.
+\begin{titlepage}
+\vspace{5cm}
+  \begin{center}    
+    \huge{\textbf{Bestandsaufnahme}}
+    \line(1,0){450}
+
+    \large{\textbf{Deutscher Alpenverein Sektion Hamburg und Niederelbe e.V.}}    
+  \end{center}
+  \begin{flushright}
+    \vspace{9cm}
+    08.06.2018 \\
+    \line(1,0){75}
+    
+    Berichterstatter:\\ 
+    Christian Böttger
+  \end{flushright}
+\end{titlepage}
+
+
+% Insert Table of contents here.
+% copy and paste toc.tex or
+% \input{toc} % Uncomment for including the tex file.
+
+$body$
+
+% \input{signature-lines}
+
+\begin{center}
+\textasteriskcentered{}
+\end{center}
+  
+\end{document}

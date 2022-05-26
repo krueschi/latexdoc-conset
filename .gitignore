@@ -1,6 +1,7 @@
 # System and temp files
 .DS_Store
 *.lb
+test*.*
 
 # LaTeX compile files
 *.aux

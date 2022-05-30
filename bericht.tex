@@ -6,7 +6,7 @@
 % pandoc -o output.pdf --template=bericht.tex --pdf-engine=xelatex -- input.md
 % ============================================================================
 
-\documentclass[12pt,a4paper]{scrartcl}
+\documentclass[$fontsize$,a4paper]{scrartcl}
 
 % Language settings
 %----------------------------
@@ -16,6 +16,8 @@
 %   \setmainlanguage{$language$}
 % $endif$
 
+\usepackage[german]{datetime2}
+\DTMsavedate{date}{$date$}
 
 % Layout settings
 %----------------------------
@@ -46,11 +48,9 @@
 \usepackage[xetex, bookmarks, colorlinks, breaklinks]{hyperref}
 \hypersetup{
   pdfinfo={
-    Author={Christian Böttger},
-    Title={Bestandsaufnahme DAV-Hamburg},
-    CreationDate={D:20180608175622},
-    ModDate={D:20211117000000},
-    Keywords={PDF;LaTeX;DAV-Hamburg;Bestandsaufnahme},
+    Author={$author$},
+    Title={$title$},
+    Keywords={$keywords$},
   }
 }
 
@@ -59,20 +59,21 @@
 
 % Insert titlepage settings here.
 \begin{titlepage}
-\vspace{5cm}
+\vspace*{5cm}
   \begin{center}    
-    \huge{\textbf{Bestandsaufnahme}}
+    \huge{\textbf{$title$}}
     \line(1,0){450}
 
-    \large{\textbf{Deutscher Alpenverein Sektion Hamburg und Niederelbe e.V.}}    
+    \large{\textbf{$responsible$}}    
   \end{center}
   \begin{flushright}
     \vspace{9cm}
-    08.06.2018 \\
+    {\small
+   $if(date)$\DTMusedate{date}$else$\today$endif$ \\
     \line(1,0){75}
     
     Berichterstatter:\\ 
-    Christian Böttger
+    $author$}
   \end{flushright}
 \end{titlepage}
 

@@ -4,5 +4,5 @@
 # LaTeX temp and compile files
 *.aux
 *.log
-
+.*.lb
 

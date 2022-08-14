@@ -1,3 +1,5 @@
+% Include this file for typography matters
+
 \usepackage{fontspec}
 \usepackage{xunicode}
 \usepackage{xltxtra}
@@ -6,12 +8,10 @@
 
 % converts LaTeX specials (quotes, dashes etc.) to Unicode
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Ligatures={Common}, Numbers={OldStyle}]{Ubuntu Light}
-\setsansfont[Scale=0.9]{Merriweather}
-\setmonofont[Scale=0.8]{Menlo}
-% \setmainfont[Ligatures={Common}, Numbers={OldStyle}]{$mainfont$}
-% \setsansfont[Scale=0.9]{$altfont$}
-% \setmonofont[Scale=0.8]{$monofont$}
+
+% Fonts are set separately
+% include the fonts.tex file here by uncommenting next line
+\input{fonts}
 
 % Set paragraph break
 \setlength{\parskip}{1em}

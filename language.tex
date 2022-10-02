@@ -1,0 +1,20 @@
+% Language settings
+%----------------------------
+
+% Use babel package if no different languages are needed
+% \usepackage[ngerman]{babel}
+% \usepackage[german]{datetime2}
+
+% Use polyglossia if two or more languages are used
+
+$if(language)$ % Setup in YAML settings file.
+  \usepackage{polyglossia}
+  \setmainlanguage{$language$}
+$endif$
+
+$if(language=de)$
+\usepackage[german]{datetime2}
+\DTMsavedate{date}{$date$}
+\addto\captionsgerman{%
+  \renewcommand{\contentsname}{Inhaltsverzeichnis}  
+}
